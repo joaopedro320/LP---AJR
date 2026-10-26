@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recebemos seu pedido | AJR Marmoraria</title>
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#1F2B47">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#1F2B47;--deep:#18213A;--slate:#A7AEC1;--stone:#D8CCB6}
+*{box-sizing:border-box}
+body{margin:0;min-height:100svh;display:grid;place-items:center;background:var(--navy);color:#fff;font-family:Inter,system-ui,sans-serif;padding:24px;text-align:center}
+main{max-width:520px}
+img{width:72px;height:auto;margin:0 auto 28px;display:block}
+h1{font-family:Poppins,system-ui,sans-serif;font-weight:600;font-size:clamp(1.8rem,5vw,2.5rem);line-height:1.15;margin:0 0 .5em;letter-spacing:-.02em}
+p{color:var(--slate);line-height:1.6;margin:0 0 1.6em}
+.row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+a.btn{display:inline-block;font-family:Poppins,sans-serif;font-weight:500;text-decoration:none;padding:.9em 1.5em;border-radius:999px;border:1.5px solid rgba(255,255,255,.35);color:#fff}
+a.btn.main{background:var(--stone);color:var(--deep);border-color:var(--stone)}
+a:focus-visible{outline:3px solid var(--stone);outline-offset:3px}
+small{display:block;margin-top:40px;color:var(--slate);font-size:.8rem}
+small a{color:var(--stone)}
+</style>
+</head>
+<body>
+<main>
+<img src="/assets/img/logo-ajr-branco.png" alt="AJR" width="484" height="515">
+<h1>Pedido recebido</h1>
+<p>Recebemos seus dados. Em <strong id="seg">4</strong> segundos você vai para o WhatsApp da AJR Marmoraria para continuar o atendimento.</p>
+<div class="row"><a class="btn main" href="https://wa.me/5511948464283?text=Ol%C3%A1%2C%20acabei%20de%20preencher%20o%20formul%C3%A1rio%20no%20site.%20Aguardo%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">Abrir o WhatsApp</a><a class="btn" href="/">Voltar ao site</a></div>
+<small>Desenvolvido por <a href="https://maltabusiness.vercel.app/" target="_blank" rel="noopener">Malta Business</a></small>
+</main>
+<script>
+window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:"thank_you_view"});
+(function(){var wa=document.querySelector(".btn.main").href,n=4,el=document.getElementById("seg");
+var t=setInterval(function(){n--;if(el)el.textContent=n;if(n<=0){clearInterval(t);window.location.href=wa;}},1000);})();
+</script>
+</body>
+</html>
