@@ -19,6 +19,7 @@ Landing page da AJR Marmoraria (Grupo AJR, São Paulo/SP). Projeto Malta Busines
 └── assets/
     ├── css/style.css
     ├── js/main.js        WhatsApp, formulário (Apps Script), lista de obras, eventos
+    ├── js/lightbox.js    Fotos em tela cheia (setas, teclado, arrastar no celular)
     ├── js/motion.js      Animações: títulos palavra por palavra, parallax, tilt, faixas, botões magnéticos
     └── img/              Fotos (jpg otimizado), logo, ícones e og-image
 ```
@@ -38,8 +39,8 @@ Landing page da AJR Marmoraria (Grupo AJR, São Paulo/SP). Projeto Malta Busines
   - `obrigado.html` e `404.html` (links wa.me)
 - **E-mail**: o briefing traz `ajrmamoraria@gmail.com` (sem o "r" de marmoraria). Mantive como veio; confirmar se não é `ajrmarmoraria@gmail.com`.
 - **Domínio / canonical**: usei `https://ajrmarmoraria.com.br/` como placeholder. Trocar em `index.html` (canonical, og:url, og:image, twitter:image, JSON-LD), `robots.txt` e `sitemap.xml`.
-- **Apps Script**: colar a URL do Web App em `SCRIPT_URL` (ver seção Formulário).
-- **GTM**: snippet comentado no `<head>` e no `<body>` com `GTM-XXXXXXX`. Trocar o ID e descomentar.
+- **Apps Script**: URL do Web App já configurada em `SCRIPT_URL`. Fazer um envio de teste e conferir se a linha aparece na planilha.
+- **GTM e Pixel da Meta**: os espaços estão marcados no código com `[ESPAÇO DO GTM - HEAD]`, `[ESPAÇO DO GTM - BODY]` e `[ESPAÇO DO PIXEL DA META]` em `index.html`, `obrigado.html` e `404.html`. Trocar `GTM-XXXXXXX` / `SEU_PIXEL_ID` e apagar as marcas de comentário em volta do script. Na `obrigado.html` o pixel já dispara `Lead`.
 - **Tempo de mercado**: o briefing diz "30+" anos e o texto "Sobre" diz "mais de 25 anos". Usei **30+** (resposta direta da pergunta). Confirmar.
 - **Logo**: não veio arquivo de logo. Extraí da apresentação em PDF (versões branca e navy em PNG). Se o cliente tiver o vetor, substituir `logo-ajr-branco.png` e `logo-ajr-navy.png`.
 - **Fotos**: a maioria vem da apresentação em PDF (resolução entre 480 e 900 px). Fotos originais em alta melhorariam a seção de obras e os cards de serviço, principalmente "Escadas".
@@ -63,6 +64,7 @@ Enquanto `SCRIPT_URL` não estiver preenchida (ou se o envio falhar), o formulá
 | `whatsapp_click` | Clique em qualquer botão/link de WhatsApp | `origem` (topo, hero, detalhe, servicos, contato, flutuante) |
 | `form_submit` | Envio do formulário | `servico`, `material` |
 | `obra_view` | Clique numa obra da lista | `obra` |
+| `foto_fullscreen` | Abertura de uma foto em tela cheia | `foto` |
 | `thank_you_view` | Carregamento da página de obrigado | |
 
 ## Fonte do conteúdo

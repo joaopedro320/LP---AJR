@@ -25,8 +25,42 @@ a:focus-visible{outline:3px solid var(--stone);outline-offset:3px}
 small{display:block;margin-top:40px;color:var(--slate);font-size:.8rem}
 small a{color:var(--stone)}
 </style>
+
+<!-- ==========================================================
+     [ESPAÇO DO GTM - HEAD]
+     Troque GTM-XXXXXXX pelo ID do contêiner e apague as duas linhas de
+     abertura e fechamento de comentário em volta do script.
+     ========================================================== -->
+<!--
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+-->
+<!-- ================== [FIM DO ESPAÇO DO GTM - HEAD] ================== -->
+
+<!-- ==========================================================
+     [ESPAÇO DO PIXEL DA META]
+     Troque SEU_PIXEL_ID pelo ID do pixel (2 lugares) e tire os comentários.
+     Se o pixel já for disparado pelo GTM, deixe este bloco comentado.
+     ========================================================== -->
+<!--
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'SEU_PIXEL_ID');
+fbq('track', 'PageView');
+fbq('track', 'Lead');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"></noscript>
+-->
+<!-- ================== [FIM DO ESPAÇO DO PIXEL DA META] ================== -->
 </head>
 <body>
+<!-- ==========================================================
+     [ESPAÇO DO GTM - BODY] Troque GTM-XXXXXXX e tire os comentários.
+     ========================================================== -->
+<!--
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+-->
+<!-- ================== [FIM DO ESPAÇO DO GTM - BODY] ================== -->
+
 <main>
 <img src="/assets/img/logo-ajr-branco.png" alt="AJR" width="484" height="515">
 <h1>Pedido recebido</h1>

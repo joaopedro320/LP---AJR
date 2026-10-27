@@ -6,8 +6,8 @@
   var WA_DEFAULT = "Olá! Vim pelo site da AJR Marmoraria e gostaria de um orçamento.";
 
   // URL do Web App do Google Apps Script (Implantar > Nova implantação > App da Web).
-  // Enquanto estiver vazia, o formulário manda a mensagem completa direto pro WhatsApp.
-  var SCRIPT_URL = "COLE_AQUI_A_URL_DO_APPS_SCRIPT";
+  // Se o envio falhar, o formulário manda a mensagem completa direto pro WhatsApp.
+  var SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz9ogSbVBkVXZNfTtMnEEWvYSXXte0CT0avrxyn2ne_SYh1UPEKhPhDygW_HkDszc0khA/exec";
 
   window.dataLayer = window.dataLayer || [];
   function track(event, data) {

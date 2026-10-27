@@ -35,9 +35,30 @@
 <link rel="stylesheet" href="assets/css/style.css">
 <script>document.documentElement.classList.add("js")</script>
 
-<!-- Google Tag Manager: troque GTM-XXXXXXX pelo ID real e descomente
+<!-- ==========================================================
+     [ESPAÇO DO GTM - HEAD]
+     Troque GTM-XXXXXXX pelo ID do contêiner e apague as duas linhas de
+     abertura e fechamento de comentário em volta do script.
+     ========================================================== -->
+<!--
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
 -->
+<!-- ================== [FIM DO ESPAÇO DO GTM - HEAD] ================== -->
+
+<!-- ==========================================================
+     [ESPAÇO DO PIXEL DA META]
+     Troque SEU_PIXEL_ID pelo ID do pixel (2 lugares) e tire os comentários.
+     Se o pixel já for disparado pelo GTM, deixe este bloco comentado.
+     ========================================================== -->
+<!--
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'SEU_PIXEL_ID');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"></noscript>
+-->
+<!-- ================== [FIM DO ESPAÇO DO PIXEL DA META] ================== -->
 
 <script type="application/ld+json">
 {
@@ -90,9 +111,13 @@
 </script>
 </head>
 <body>
-<!-- Google Tag Manager (noscript): troque o ID e descomente
+<!-- ==========================================================
+     [ESPAÇO DO GTM - BODY] Troque GTM-XXXXXXX e tire os comentários.
+     ========================================================== -->
+<!--
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 -->
+<!-- ================== [FIM DO ESPAÇO DO GTM - BODY] ================== -->
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
 <header class="topbar" id="topo">
@@ -168,17 +193,17 @@
         </div>
       </article>
       <article class="piece">
-        <img src="assets/img/escada-pedra.jpg" alt="Escada externa iluminada ao entardecer" width="384" height="512" loading="lazy">
+        <img src="assets/img/escada-pedra.jpg" alt="Área externa com escada e paredes iluminadas ao entardecer" width="384" height="512" loading="lazy">
         <div class="piece__txt">
-          <h3>Escadas</h3>
-          <p>Degraus e espelhos em pedra para áreas internas e externas.</p>
+          <h3>Áreas externas</h3>
+          <p>Escadas, bordas de piscina e revestimentos em pedra para pátios e áreas abertas.</p>
         </div>
       </article>
       <article class="piece">
-        <img src="assets/img/piscina-pedra.jpg" alt="Piscina com revestimento em pedra clara" width="480" height="640" loading="lazy">
+        <img src="assets/img/piscina-pedra.jpg" alt="Área interna com revestimento em pedra clara" width="480" height="640" loading="lazy">
         <div class="piece__txt">
-          <h3>Revestimento de piscina</h3>
-          <p>Bordas e revestimentos de piscina com pedra própria para área molhada.</p>
+          <h3>Áreas internas</h3>
+          <p>Revestimentos, escadas e acabamentos em pedra para salas, banheiros e áreas molhadas.</p>
         </div>
       </article>
       <aside class="piece piece--cta">
@@ -406,5 +431,6 @@
 
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/motion.js" defer></script>
+<script src="assets/js/lightbox.js" defer></script>
 </body>
 </html>
