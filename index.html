@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://ajrmarmoraria.com.br/assets/img/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Banco esculpido em pedra com iluminação embutida, obra da AJR">
+<meta property="og:image:alt" content="Cozinha com bancada em pedra preta, projeto da AJR">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AJR Marmoraria | Marmoraria de Alto Padrão em São Paulo">
 <meta name="twitter:description" content="Bancadas, revestimentos, escadas e piscinas em pedra natural. Equipe própria e mais de 30 anos de obra.">
@@ -28,7 +28,8 @@
 <link rel="apple-touch-icon" href="assets/img/icon-180.png">
 <link rel="manifest" href="site.webmanifest">
 
-<link rel="preload" as="image" href="assets/img/hero-banco-pedra.jpg" fetchpriority="high">
+<link rel="preload" as="image" href="assets/img/hero-bancada-preta.jpg" media="(min-width: 821px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/img/hero-bancada-preta-mobile.jpg" media="(max-width: 820px)" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
@@ -127,6 +128,7 @@ fbq('track', 'PageView');
     </a>
     <nav class="nav" aria-label="Principal">
       <a href="#pedra">Serviços</a>
+      <a href="#projetos">Projetos</a>
       <a href="#obras">Obras</a>
       <a href="#grupo">Grupo AJR</a>
       <a href="#duvidas">Dúvidas</a>
@@ -139,25 +141,28 @@ fbq('track', 'PageView');
 
 <!-- HERO -->
 <section class="hero" id="hero">
-  <span class="hero__glow" aria-hidden="true"></span>
-  <div class="hero__text">
-    <p class="hero__kicker">AJR Marmoraria, do Grupo AJR</p>
-    <h1>Marmoraria de alto padrão perto de você, em São Paulo</h1>
-    <p class="hero__lead">Mármores, granitos, quartzos, quartzitos e lâminas ultracompactas transformados em bancadas, revestimentos, escadas e piscinas. Com equipe própria e a experiência de quem faz obra há mais de 30 anos.</p>
-    <div class="hero__cta">
-      <a class="btn btn--stone js-wa" data-origem="hero" href="#">Pedir orçamento no WhatsApp</a>
-      <a class="btn btn--ghost" href="#obras">Ver obras realizadas</a>
+  <div class="hero__frame">
+    <picture class="hero__media">
+      <source media="(max-width: 820px)" srcset="assets/img/hero-bancada-preta-mobile.jpg" width="1000" height="1215">
+      <img class="hero__img" src="assets/img/hero-bancada-preta.jpg" alt="Cozinha com bancada em pedra preta, cooktop embutido e marcenaria clara" width="2400" height="1538" fetchpriority="high">
+    </picture>
+    <span class="hero__shade" aria-hidden="true"></span>
+    <span class="hero__glow" aria-hidden="true"></span>
+    <div class="hero__text">
+      <p class="hero__kicker">AJR Marmoraria, do Grupo AJR</p>
+      <h1>Marmoraria de alto padrão perto de você, em São Paulo</h1>
+      <p class="hero__lead">Mármores, granitos, quartzos, quartzitos e lâminas ultracompactas transformados em bancadas, revestimentos, escadas e piscinas. Com equipe própria e a experiência de quem faz obra há mais de 30 anos.</p>
+      <div class="hero__cta">
+        <a class="btn btn--stone js-wa" data-origem="hero" href="#">Pedir orçamento no WhatsApp</a>
+        <a class="btn btn--ghost" href="#obras">Ver obras realizadas</a>
+      </div>
+      <dl class="hero__facts">
+        <div><dt><span class="js-count" data-to="30">30</span>+</dt><dd>anos no mercado</dd></div>
+        <div><dt>Própria</dt><dd>equipe de execução</dd></div>
+        <div><dt><span class="js-count" data-to="2600">2.600</span> m²</dt><dd>maior obra apresentada, Colégio Pentágono</dd></div>
+      </dl>
     </div>
-    <dl class="hero__facts">
-      <div><dt><span class="js-count" data-to="30">30</span>+</dt><dd>anos no mercado</dd></div>
-      <div><dt>Própria</dt><dd>equipe de execução</dd></div>
-      <div><dt><span class="js-count" data-to="2600">2.600</span> m²</dt><dd>maior obra apresentada, Colégio Pentágono</dd></div>
-    </dl>
   </div>
-  <figure class="hero__media">
-    <img class="hero__img" src="assets/img/hero-banco-pedra.jpg" alt="Banco esculpido em pedra com iluminação embutida entre painéis ripados" width="1055" height="1400" fetchpriority="high">
-    <figcaption>Café Ó / Casa Ó, Pinheiros</figcaption>
-  </figure>
 </section>
 
 <!-- CLIENTES -->
@@ -242,6 +247,39 @@ fbq('track', 'PageView');
     <p>Cuba esculpida, bordas retas e nicho no mesmo material. É esse cuidado de acabamento que a AJR leva para cada peça, do lavabo à cozinha inteira.</p>
     <p>Qualidade, prazo e resolução de problemas são os três pontos que guiam o nosso trabalho.</p>
     <a class="btn btn--navy js-wa" data-origem="detalhe" href="#">Conversar sobre o meu projeto</a>
+  </div>
+</section>
+
+<!-- MELHORES PROJETOS -->
+<section class="projects" id="projetos">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <h2>Melhores projetos</h2>
+      <p>Uma seleção de cozinhas, banheiros, lavatórios e acabamentos em pedra feitos pela AJR. Clique em qualquer foto para ver em tela cheia.</p>
+    </header>
+    <div class="projects__grid" id="projGrid">
+      <figure class="proj proj--big"><img src="assets/img/projeto-01.jpg" alt="Cozinha com ilha e bancada em pedra preta com veios brancos" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj"><img src="assets/img/projeto-02.jpg" alt="Cozinha ampla com ilha revestida em pedra escura" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj"><img src="assets/img/projeto-03.jpg" alt="Sala ampla com piso em pedra clara e varanda integrada" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj"><img src="assets/img/projeto-04.jpg" alt="Painel e bancada suspensa em pedra com iluminação embutida" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj"><img src="assets/img/projeto-05.jpg" alt="Corredor com adega envidraçada e piso em pedra" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj proj--wide"><img src="assets/img/projeto-06.jpg" alt="Banheiro com piso e parede revestidos em pedra clara e banheira" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj"><img src="assets/img/projeto-07.jpg" alt="Box de banheiro com paredes revestidas em pedra clara" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj"><img src="assets/img/projeto-08.jpg" alt="Ilha de cozinha com tampo em pedra clara e cooktop embutido" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj"><img src="assets/img/projeto-09.jpg" alt="Bancada de banheiro em pedra escura com cuba esculpida" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj proj--big"><img src="assets/img/projeto-10.jpg" alt="Lavatório esculpido em pedra com cuba integrada" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj proj--wide"><img src="assets/img/projeto-11.jpg" alt="Cuba esculpida em pedra clara com caimento interno" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj"><img src="assets/img/projeto-12.jpg" alt="Detalhe de borda em pedra preta texturizada" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj is-extra"><img src="assets/img/projeto-13.jpg" alt="Detalhe de meia-esquadria em pedra preta texturizada" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj is-extra"><img src="assets/img/projeto-14.jpg" alt="Detalhe de canto em meia-esquadria na pedra preta" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj proj--wide is-extra"><img src="assets/img/projeto-15.jpg" alt="Bancada de cozinha em pedra preta" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj is-extra"><img src="assets/img/projeto-16.jpg" alt="Bancada de cozinha em pedra clara com cuba dupla" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj is-extra"><img src="assets/img/projeto-17.jpg" alt="Detalhe de cuba dupla em bancada de pedra clara" width="825" height="1100" loading="lazy"></figure>
+      <figure class="proj proj--wide is-extra"><img src="assets/img/projeto-18.jpg" alt="Mesa de jantar longa com tampo em pedra natural verde" width="825" height="1100" loading="lazy"></figure>
+    </div>
+    <div class="projects__more">
+      <button type="button" class="btn btn--navy" id="projMore" aria-controls="projGrid" aria-expanded="false">Ver mais projetos</button>
+    </div>
   </div>
 </section>
 
@@ -431,6 +469,7 @@ fbq('track', 'PageView');
 
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/motion.js" defer></script>
+<script src="assets/js/projects.js" defer></script>
 <script src="assets/js/lightbox.js" defer></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 (function () {
   "use strict";
   // Fotos que abrem em tela cheia ao clicar
-  var SELECTOR = ".hero__img, .piece img, .detail__img img, .works__view img, .w-img img";
+  var SELECTOR = ".hero__img, .piece img, .detail__img img, .proj img, .works__view img, .w-img img";
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // Monta o visualizador
