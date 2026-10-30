@@ -1,6 +1,6 @@
-# LP AJR Marmoraria
+# LP AJR
 
-Landing page da AJR Marmoraria (Grupo AJR, São Paulo/SP). Projeto Malta Business, no padrão de produção QH4.
+Landing page da AJR (construções, reformas e marmoraria, São Paulo/SP). Projeto Malta Business, no padrão de produção QH4.
 
 ## Estrutura
 

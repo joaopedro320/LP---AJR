@@ -3,7 +3,7 @@
 
   // Número de WhatsApp (só dígitos, com 55 + DDD). Confirmar com o cliente antes de publicar.
   var WA_NUMBER = "5511948464283";
-  var WA_DEFAULT = "Olá! Vim pelo site da AJR Marmoraria e gostaria de um orçamento.";
+  var WA_DEFAULT = "Olá! Vim pelo site da AJR e gostaria de um orçamento.";
 
   // URL do Web App do Google Apps Script (Implantar > Nova implantação > App da Web).
   // Se o envio falhar, o formulário manda a mensagem completa direto pro WhatsApp.
@@ -232,12 +232,12 @@
 
       function fallbackWhatsApp() {
         var msg =
-          "Olá! Preenchi o formulário no site da AJR Marmoraria.\n\n" +
+          "Olá! Preenchi o formulário no site da AJR.\n\n" +
           "Nome: " + lead.nome + "\n" +
           "WhatsApp: " + lead.telefone + "\n" +
           "Local da obra: " + lead.local + "\n" +
           "O que preciso: " + lead.servico + "\n" +
-          "Material de interesse: " + lead.material +
+          "Acabamento em pedra: " + lead.material +
           (lead.mensagem ? "\nDetalhes: " + lead.mensagem : "");
         window.location.href = waLink(msg);
       }

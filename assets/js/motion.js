@@ -7,7 +7,7 @@
 
   // ---------- Títulos: quebra em palavras ----------
   function split(el) {
-    var words = el.textContent.trim().split(/\s+/);
+    var words = el.textContent.trim().split(/[ \t\n\r]+/);
     el.setAttribute("aria-label", el.textContent.trim());
     el.innerHTML = words.map(function (w, i) {
       return '<span class="w" aria-hidden="true"><span class="wi" style="--wi:' + i + '">' + w + "</span></span>";
