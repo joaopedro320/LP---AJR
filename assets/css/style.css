@@ -96,7 +96,7 @@ p{margin:0 0 1em}
 .sec-head--light p{color:var(--slate)}
 
 /* Stone services */
-.stone{padding:110px 0 96px;background:var(--paper)}
+.stone{padding:110px 0 96px;background:var(--white)}
 .stone__grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;grid-template-rows:auto auto;gap:20px}
 .piece{position:relative;overflow:hidden;border-radius:6px;background:var(--navy);min-height:300px;isolation:isolate}
 .piece--tall{grid-row:span 2;min-height:640px}
@@ -158,7 +158,7 @@ p{margin:0 0 1em}
 .group__steps span{color:var(--slate);font-size:.94rem}
 
 /* Story */
-.story{background:var(--mist);padding:96px 0}
+.story{background:var(--paper);padding:96px 0}
 .story__in{display:grid;grid-template-columns:240px 1fr;gap:56px;align-items:center;max-width:980px}
 .story__logo{width:240px}
 .story p{color:var(--muted);max-width:40em}

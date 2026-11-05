@@ -236,8 +236,8 @@
           "Nome: " + lead.nome + "\n" +
           "WhatsApp: " + lead.telefone + "\n" +
           "Local da obra: " + lead.local + "\n" +
-          "O que preciso: " + lead.servico + "\n" +
-          "Acabamento em pedra: " + lead.material +
+          "O que preciso: " + lead.servico +
+          (lead.material ? "\nAcabamento em pedra: " + lead.material : "") +
           (lead.mensagem ? "\nDetalhes: " + lead.mensagem : "");
         window.location.href = waLink(msg);
       }
