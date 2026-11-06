@@ -85,4 +85,4 @@ Todo o texto vem do briefing (formulário Malta Business) e da apresentação in
 - [x] vercel.json
 - [x] Página de obrigado (noindex) e 404 personalizada
 - [x] Botão flutuante de WhatsApp à direita
-- [x] Rodapé "Desenvolvido por Malta Business" com link para maltabusiness.vercel.app
+- [x] Rodapé "Desenvolvido por Malta Business" com link para maltabusiness.com.br
