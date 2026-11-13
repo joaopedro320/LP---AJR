@@ -102,9 +102,10 @@
     var t = e.target;
     var card = t.closest && t.closest(".piece:not(.piece--cta)");
     var target = null;
-    if (t.matches && t.matches(SELECTOR)) target = t;
+    if (t.matches && t.matches(SELECTOR)) target = (t.closest(".hero__media") && t.closest(".hero__media").querySelector(".is-on img")) || t;
     else if (card && !t.closest("a, button")) target = card.querySelector("img");
-    else if (t.closest && t.closest(".works__view, .hero__media, .detail__img")) target = t.closest(".works__view, .hero__media, .detail__img").querySelector("img");
+    else if (t.closest && t.closest(".hero__media")) target = t.closest(".hero__media").querySelector(".is-on img") || t.closest(".hero__media").querySelector("img");
+    else if (t.closest && t.closest(".works__view, .detail__img")) target = t.closest(".works__view, .detail__img").querySelector("img");
     if (!target) return;
     e.preventDefault();
     e.stopPropagation();

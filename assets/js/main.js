@@ -21,7 +21,7 @@
 
   // Links de WhatsApp
   document.querySelectorAll(".js-wa").forEach(function (a) {
-    a.href = waLink(WA_DEFAULT);
+    a.href = waLink(a.getAttribute("data-msg") || WA_DEFAULT);
     a.target = "_blank";
     a.rel = "noopener";
     a.addEventListener("click", function () {
@@ -37,19 +37,24 @@
 
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // Parallax leve no hero (desktop)
-  var heroImg = document.querySelector(".hero__img");
-  if (heroImg && !reduce && window.innerWidth > 820) {
-    var ticking = false;
-    window.addEventListener("scroll", function () {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(function () {
-        var y = Math.min(window.scrollY, window.innerHeight);
-        heroImg.style.transform = "scale(1.08) translateY(" + (y * 0.08) + "px)";
-        ticking = false;
-      });
-    }, { passive: true });
+  // Hero: fotos trocando sozinhas
+  var slidesBox = document.getElementById("heroSlides");
+  if (slidesBox) {
+    var slides = slidesBox.querySelectorAll(".hero__slide");
+    var dots = document.querySelectorAll(".hero__dot");
+    var cur = 0, timer = null;
+    function go(i) {
+      slides[cur].classList.remove("is-on"); dots[cur].classList.remove("is-on");
+      cur = (i + slides.length) % slides.length;
+      var img = slides[cur].querySelector("img"); if (img.loading === "lazy") img.loading = "eager";
+      slides[cur].classList.add("is-on"); dots[cur].classList.add("is-on");
+    }
+    function start() { if (reduce || slides.length < 2) return; clearInterval(timer); timer = setInterval(function () { go(cur + 1); }, 5500); }
+    dots.forEach(function (d, i) { d.addEventListener("click", function () { go(i); start(); }); });
+    document.addEventListener("visibilitychange", function () { if (document.hidden) clearInterval(timer); else start(); });
+    // pré-carrega as próximas fotos depois da primeira
+    window.addEventListener("load", function () { slides.forEach(function (s) { var im = s.querySelector("img"); if (im.loading === "lazy") im.loading = "eager"; }); });
+    start();
   }
 
   // Barra de progresso de rolagem

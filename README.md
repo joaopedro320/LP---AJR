@@ -18,7 +18,7 @@ Landing page da AJR (construções, reformas e marmoraria, São Paulo/SP). Proje
 │   └── Code.gs           Código do Google Apps Script que grava os leads na planilha
 └── assets/
     ├── css/style.css
-    ├── js/main.js        WhatsApp, formulário (Apps Script), lista de obras, eventos
+    ├── js/main.js        WhatsApp, slideshow do hero, formulário (Apps Script), lista de obras, eventos
     ├── js/lightbox.js    Fotos em tela cheia (setas, teclado, arrastar no celular)
     ├── js/motion.js      Animações: títulos palavra por palavra, parallax, tilt, faixas, botões magnéticos
     └── img/              Fotos (jpg otimizado), logo, ícones e og-image
